@@ -13,12 +13,13 @@
 		document.write(frase);
 		pulaLinha();
 	}
-    function calculaImc(peso, altura) {
-        var imc = Math.round(peso / (altura * altura));
-        mostra(" O IMC calculado é: " + imc);
-    }
-    
-    calculaImc(75, 1.77);
-    calculaImc(80, 1.80);
+	
+	function calculaImc(peso, altura) {
+		var imc = Math.round(peso / (altura * altura));
+		mostra(" O IMC calculado é: " + imc);
+	}
+
+	calculaImc(75, 1.77);
+	calculaImc(80, 1.80);
     
 </script>
