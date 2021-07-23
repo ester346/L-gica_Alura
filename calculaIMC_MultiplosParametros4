@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		pulaLinha();
+		document.write(frase);
+		pulaLinha();
+    
+	}
+  
+  function calculaImc(peso, altura) {
+    
+    return Math.round(peso / (altura * altura));
+        
+  }
+
+    
+ var TotalImcs = calculaImc(75, 1.77) + calculaImc(80, 1.80);
+
+ document.write("A soma dos Imc's é: " + TotalImcs);
+    
+ mostra("O meu IMC é " + calculaImc(1.63, 48) ); // foi concanectado a string c/ a função (o valor do retorno (return) da função calculo imc) //
