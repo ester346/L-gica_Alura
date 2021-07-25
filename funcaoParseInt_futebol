@@ -1,6 +1,6 @@
 <script>
 
-    function pulaLinha() {
+      function pulaLinha() {
 
       document.write("<br>");	
 
@@ -11,6 +11,7 @@
       pulaLinha();
       document.write(frase);
       pulaLinha();
+      
     }
 
     var numeroDeVitorias = prompt("Informe o número de vitórias do seu time: ");
