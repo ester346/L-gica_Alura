@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(numero) {
+
+        return Math.round(Math.random() * numero); // isso é o que a função sorteia faz 
+    }
+
+    var numeroPensado = sorteia(10); // aq a variável recebe o retorno da função sorteia (n (parametro dado) * o numero aleatório q vai ser gerado)
+    var chute = parseInt(prompt("Informe um número pra chute: "));
+    console.log(numeroPensado);
+
+    if (chute == numeroPensado) {
+
+        mostra("Parabens, você acertou, pois o número pensado foi: " + numeroPensado);
+    } else {
+
+        mostra("Puxa! não foi dessa vez. O número pensado foi: " + numeroPensado);
+    }
+    
+</script>
