@@ -1,0 +1,31 @@
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		pulaLinha();
+		document.write(frase);
+		pulaLinha();
+    
+  }
+
+    var numeroPensando = Math.round(Math.random() * 10); // Math.random - Gera números aleatórios; Math.round - arredonda os  números //
+    var chute = parseInt(prompt("Digite o seu  chute? "));
+  
+    console.log(numeroPensando);  // console.log imprime as informações no console do Browser, auxiliando nos teste // 
+
+    if (chute == numeroPensando ) {
+        
+        mostra("Você acertou!");
+
+    } else {
+
+        mostra("Você errou! O número pensado foi " + numeroPensando);
+   };
+
+</script>
